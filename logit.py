@@ -98,10 +98,7 @@ def plotLikelihood(itr,plot):
     plt.xlabel("Iterations")
     plt.ylabel("Likelihood")
     plt.title("Change in log likelihood")
-
-
-#trxFeatures = np.array(extractFeatures(trX))
-#tsxFeatures = np.array(extractFeatures(tsX))
+    
 def logisitcRegression(trX,trY,tsX,tsY):
     w,itr,plot = gradientAscentOptimize(trX,trY,1e-3,200000)
     pred_y = testLogisticRegression(tsX,w)
